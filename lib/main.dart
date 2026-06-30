@@ -2,21 +2,23 @@ import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 
 void main() {
-  runApp(const SimplePaymentApp());
+  runApp(const SupportApp());
 }
 
-class SimplePaymentApp extends StatelessWidget {
-  const SimplePaymentApp({super.key});
+class SupportApp extends StatelessWidget {
+  const SupportApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Simple Payment',
+      title: "Support App",
       debugShowCheckedModeBanner: false,
+
       theme: ThemeData(
-        colorSchemeSeed: Colors.blue,
         useMaterial3: true,
+        colorSchemeSeed: Colors.pink,
       ),
+
       home: const HomeScreen(),
     );
   }
